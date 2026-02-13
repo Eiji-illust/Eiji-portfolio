@@ -127,26 +127,35 @@ main {
 }
 
 .overview .text {
-    width: 500px;
+    width: 400px;
 }
 
 .overview h2 {
     height: fit-content;
     color: var(--text-color);
     
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
-    text-align: center;
+    text-align:left;
     font-weight: 800;
     font-size: 64px;
 }
 
-.overview p{
-    border: 1px solid red;
+.overview h3{
+    /* border: 1px solid red; */
     color: var(--accent-color);
     text-align:left;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.overview p{
+    /* border: 1px solid red; */
+    color: var(--text-color);
+    text-align:left;
+    font-size: .8em;
+    font-weight: 300;
 }
 
 h3 {

@@ -93,8 +93,14 @@ header {
     border: 1px solid red;
     justify-content: center;
     align-items: center;
-    
+    cursor: pointer;
 }
+
+.theme-icon:hover {
+    transform: scale(1.05);
+    transition: all .2s ease-in-out;
+}
+
 main {
     color: black;
     /* border: 2px dashed black; */
@@ -118,44 +124,63 @@ main {
     width: auto;
 
     border-radius: 20px;
-    border: 1px solid red;
+    box-shadow: 0 5px 10px var(--base-variant);
+    /* border: 1px solid red; */
 
     background: var(--base-variant);
     margin: 20px;
-    padding: 20px;
+    padding: 50px;
     gap: 20px;
 }
 
 .overview .text {
-    width: 400px;
+    width: 450px;
 }
 
 .overview h2 {
     height: fit-content;
     color: var(--text-color);
-    
-    /* border: 1px solid red; */
 
     text-align:left;
     font-weight: 800;
     font-size: 64px;
+    margin: 0 0 10px 10px;
 }
 
 .overview h3{
-    /* border: 1px solid red; */
     color: var(--accent-color);
     text-align:left;
     font-size: 1.5em;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin: 0 0 10px 10px;
 }
 
 .overview p{
-    /* border: 1px solid red; */
-    color: var(--text-color);
+    color: var(--secondary-text);
     text-align:left;
     font-size: .8em;
     font-weight: 300;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.overview  p:hover {
+    color: #ffffff;
+    background: hsl(228, 37%, 34%);
+
+    transition: all 0.2s ease-in-out;
+}
+
+.overview img{
+    justify-content: center;
+    align-self: center;
+    
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.overview img:hover {
+    filter: drop-shadow(0 0 1em hsl(229, 100%, 75%));
 }
 
 h3 {
@@ -186,7 +211,7 @@ h3 {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    margin-bottom: 10px;
+    margin: 0px 0px 10px 10px;
 }
 
 .proj-header h4 {
@@ -214,8 +239,18 @@ h3 {
 }
 
 .box p {
+    padding: 10px;
+    color: var(--secondary-text);
     font-size: 0.8em;
+    border-radius: 5px;
 }
+
+.box p:hover {
+    transition: all 0.2s ease-in-out;
+    color: #ffffff;
+    background-color: #5b6891;
+}
+
 
 footer {
     bottom: 0;
